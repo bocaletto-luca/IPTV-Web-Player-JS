@@ -1,7 +1,13 @@
 # IPTV WEB Player
 
-[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
-[![Open Source](https://img.shields.io/badge/Open%20Source-Good-green.svg)]()
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue?style=flat-square)](LICENSE)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen?style=flat-square)]()
+[![Responsive](https://img.shields.io/badge/Responsive-Yes-blue?style=flat-square)]()
+[![Multi-Platform](https://img.shields.io/badge/Multi--Platform-Yes-blueviolet?style=flat-square)]()
+[![Web App](https://img.shields.io/badge/Web%20App-Yes-orange?style=flat-square)]()
 
 **IPTV WEB Player** is a professional, responsive web streaming application developed by **Bocaletto Luca**. It allows users to upload an .m3u or .m3u8 playlist file to dynamically generate a channel list and stream IPTV channels using HLS.js. The app features a modern, icon-enhanced UI with full keyboard and gamepad support for seamless navigation.
 
