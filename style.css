@@ -1,0 +1,104 @@
+ /* Reset e stili base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+       font-family: Arial, sans-serif;
+       background-color: #000;
+       color: #fff;
+    }
+    header {
+       background-color: #111;
+       padding: 1rem;
+       text-align: center;
+       border-bottom: 1px solid #333;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    header img {
+       height: 50px;
+       margin-right: 10px;
+    }
+    /* Area file input (per caricare la lista .m3u) */
+    .file-input {
+       background-color: #111;
+       padding: 10px;
+       text-align: center;
+       border-bottom: 1px solid #333;
+    }
+    .file-input p { margin-bottom: 5px; }
+    .file-input input {
+       margin: 0.5rem;
+       padding: 0.5rem;
+       font-size: 1rem;
+    }
+    /* Layout principale in flex: player e lista canali */
+    .main-container {
+       display: flex;
+       height: calc(100vh - 240px); /* Spazio per header, file input e footer */
+    }
+    .player-container {
+       flex: 3;
+       position: relative;
+       background-color: #000;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .player-container video {
+       width: 100%;
+       height: 100%;
+       background-color: #000;
+    }
+    /* Spinner overlay per il caricamento */
+    .spinner-overlay {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0,0,0,0.6);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       z-index: 10;
+       display: none;
+    }
+    .spinner {
+       border: 8px solid #f3f3f3;
+       border-top: 8px solid #3498db;
+       border-radius: 50%;
+       width: 60px;
+       height: 60px;
+       animation: spin 1s linear infinite;
+    }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    /* Aside della lista dei canali */
+    .channel-list {
+       flex: 1;
+       background-color: #222;
+       padding: 10px;
+       overflow-y: auto;
+    }
+    #channelsContainer { }
+    .channel {
+       padding: 10px;
+       margin-bottom: 5px;
+       border-bottom: 1px solid #444;
+       cursor: pointer;
+       transition: background 0.15s ease;
+    }
+    .channel:hover { background-color: #444; }
+    .channel.selected { background-color: #666; }
+    /* Footer */
+    footer {
+       background-color: #111;
+       padding: 10px;
+       text-align: center;
+       border-top: 1px solid #333;
+       font-size: 0.9rem;
+    }
+    /* Responsive: layout a colonna se la larghezza è bassa */
+    @media (max-width: 768px) {
+       .main-container { flex-direction: column; }
+       .player-container, .channel-list { flex: none; width: 100%; height: 50vh; }
+    }

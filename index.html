@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>IPTV WEB Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Includi HLS.js tramite CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Sostituisci "logo.png" con il nome del tuo file di logo -->
+    <img src="logo.png" alt="IPTV Logo">
+    <h1>IPTV WEB Player</h1>
+  </header>
+  <div class="file-input">
+    <p>Carica il file .m3u o .m3u8 dei canali IPTV:</p>
+    <input type="file" id="m3uFile" accept=".m3u, .m3u8">
+    <p>(Puoi interagire con il Player con Mouse, Touch, Tastiera, Joypad, Telecomando).</p>
+  </div>
+  <div class="main-container">
+    <!-- Area del player -->
+    <div class="player-container">
+      <div class="spinner-overlay" id="spinner">
+        <div class="spinner"></div>
+      </div>
+      <video id="videoPlayer" controls></video>
+    </div>
+    <!-- Lista dei canali -->
+    <aside class="channel-list" id="channelList">
+      <div id="channelsContainer">
+        <!-- I canali verranno creati qui dinamicamente -->
+      </div>
+    </aside>
+  </div>
+  <footer>
+    © 2025 IPTV WEB Player | By Bocaletto Luca | GPLv3 | All right reserved.
+  </footer>
+    <script src="core.js"></script>
+</body>
+</html>
